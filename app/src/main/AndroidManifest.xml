@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MWCLabProject"
         tools:ignore="AllowBackup">
-        <activity android:name=".PredictPathLoss"></activity>
+        <activity android:name=".PredictPathLoss" />
         <activity android:name=".CellsAndChannels" />
         <activity android:name=".MainActivity">
             <intent-filter>
