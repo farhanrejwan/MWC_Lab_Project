@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/forestGreen"
+    tools:context=".PredictPathLoss">
+
+    <TextView
+        android:id="@+id/predictPathLossText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/buckySeaGreen"
+        android:gravity="center_horizontal"
+        android:text="@string/predict_path_loss"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/carrierFrequencyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/predictPathLossText"
+        android:layout_alignStart="@id/predictPathLossText"
+        android:layout_alignLeft="@id/predictPathLossText"
+        android:layout_marginTop="5dp"
+        android:text="@string/carrier_frequency"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/carrierFrequencyTextInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/predictPathLossText"
+        android:layout_alignBottom="@id/carrierFrequencyText"
+        android:width="100dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:layout_alignEnd="@id/predictPathLossText"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/transmitterHeightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carrierFrequencyText"
+        android:layout_alignLeft="@id/predictPathLossText"
+        android:layout_marginTop="5dp"
+        android:text="@string/height_of_ntransmitting_antenna"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_alignStart="@id/predictPathLossText" />
+
+    <EditText
+        android:id="@+id/transmitterHeightTextInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/predictPathLossText"
+        android:layout_alignBottom="@id/transmitterHeightText"
+        android:width="100dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:importantForAutofill="no"
+        android:layout_alignEnd="@id/predictPathLossText"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/receiverHeightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transmitterHeightText"
+        android:layout_alignLeft="@id/predictPathLossText"
+        android:layout_marginTop="5dp"
+        android:text="@string/height_of_nreceiving_antenna"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_alignStart="@id/predictPathLossText" />
+
+    <EditText
+        android:id="@+id/receiverHeightTextInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/predictPathLossText"
+        android:layout_alignBottom="@id/receiverHeightText"
+        android:width="100dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:layout_alignEnd="@id/predictPathLossText"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/distanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/receiverHeightText"
+        android:layout_alignLeft="@id/predictPathLossText"
+        android:layout_marginTop="5dp"
+        android:text="@string/propagation_distance"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_alignStart="@id/predictPathLossText" />
+
+    <EditText
+        android:id="@+id/distanceTextInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/predictPathLossText"
+        android:layout_alignBottom="@id/distanceText"
+        android:width="100dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:layout_alignEnd="@id/predictPathLossText"
+        tools:ignore="Autofill,LabelFor" />
+
+    <RadioGroup
+        android:id="@+id/citySize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/distanceText"
+        android:layout_alignStart="@id/predictPathLossText"
+        android:layout_alignLeft="@id/predictPathLossText"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/smallMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:text="@string/small_medium_city"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:text="@string/large_city"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/areaType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/distanceText"
+        android:layout_alignRight="@id/predictPathLossText"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_alignEnd="@id/predictPathLossText">
+
+        <RadioButton
+            android:id="@+id/urban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:text="@string/urban_area"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/suburban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:text="@string/suburban_area"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:text="@string/open_area"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/pathLossCalculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/areaType"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="calculateButton"
+        android:text="@string/calculate"
+        android:textAllCaps="false"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/pathLossOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pathLossCalculateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/seaGreen"
+        android:padding="10dp"
+        android:text="@string/results_here"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+</RelativeLayout>

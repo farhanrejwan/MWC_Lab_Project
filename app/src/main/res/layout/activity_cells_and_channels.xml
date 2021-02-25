@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azureBlue"
+    android:padding="10dp"
+    tools:context=".CellsAndChannels">
+
+    <TextView
+        android:id="@+id/cellsAndChannelsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/buckyBlue"
+        android:gravity="center_horizontal"
+        android:text="@string/cells_and_channels"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/areaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cellsAndChannelsText"
+        android:layout_alignStart="@id/cellsAndChannelsText"
+        android:layout_alignLeft="@id/cellsAndChannelsText"
+        android:layout_marginTop="5dp"
+        android:text="@string/area_size_to_cover"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/areaTextInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/cellsAndChannelsText"
+        android:layout_alignRight="@id/cellsAndChannelsText"
+        android:layout_alignBottom="@id/areaText"
+        android:width="100dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        tools:ignore="Autofill,LabelFor" />
+
+    <RadioGroup
+        android:id="@+id/cellType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/areaText"
+        android:layout_alignStart="@id/cellsAndChannelsText"
+        android:layout_alignLeft="@id/cellsAndChannelsText"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/macrocell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:text="@string/macrocell"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/microcell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:text="@string/microcell"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/radiusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cellType"
+        android:layout_alignStart="@id/cellsAndChannelsText"
+        android:layout_alignLeft="@id/cellsAndChannelsText"
+        android:layout_marginTop="5dp"
+        android:text="@string/radius_of_each_cell"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/radiusTextInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/cellsAndChannelsText"
+        android:layout_alignRight="@id/cellsAndChannelsText"
+        android:layout_alignBottom="@id/radiusText"
+        android:width="100dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/frequencyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radiusText"
+        android:layout_alignStart="@id/cellsAndChannelsText"
+        android:layout_alignLeft="@id/cellsAndChannelsText"
+        android:layout_marginTop="5dp"
+        android:text="@string/total_number_nof_frequencies"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/frequencyTextInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/cellsAndChannelsText"
+        android:layout_alignRight="@id/cellsAndChannelsText"
+        android:layout_alignBottom="@id/frequencyText"
+        android:width="100dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/factorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frequencyText"
+        android:layout_alignStart="@id/cellsAndChannelsText"
+        android:layout_alignLeft="@id/cellsAndChannelsText"
+        android:layout_marginTop="5dp"
+        android:text="@string/frequency_nreuse_factor"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/factorTextInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/cellsAndChannelsText"
+        android:layout_alignRight="@id/cellsAndChannelsText"
+        android:layout_alignBottom="@id/factorText"
+        android:width="100dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        tools:ignore="Autofill,LabelFor" />
+
+    <Button
+        android:id="@+id/cellsAndChannelsCalculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/factorText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="calculateButton"
+        android:text="@string/calculate"
+        android:textAllCaps="false"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/cellsAndChannelsOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cellsAndChannelsCalculateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/royalBlue"
+        android:padding="10dp"
+        android:text="@string/results_here"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+</RelativeLayout>

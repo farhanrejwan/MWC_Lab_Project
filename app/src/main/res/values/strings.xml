@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MWC Lab Project</string>
+    <string name="invisible">invisible</string>
+    <string name="cell_organization_nsimulator">Cell Organization\nSimulator</string>
+    <string name="choose_an_option_from_below">Choose an option from below :</string>
+    <string name="predict_npath_loss">Predict\nPath Loss</string>
+    <string name="cells_and_nchannels">Cells and\nChannels</string>
+    <string name="cells_and_channels">Cells and Channels</string>
+    <string name="results_here">results here</string>
+    <string name="radius_of_each_cell">Radius of each cell :</string>
+    <string name="area_size_to_cover">Area size to cover :</string>
+    <string name="total_number_nof_frequencies">Total number\nof frequencies :</string>
+    <string name="frequency_nreuse_factor">Frequency\nreuse factor :</string>
+    <string name="macrocell">Macrocell</string>
+    <string name="microcell">Microcell</string>
+    <string name="calculate">Calculate!</string>
+    <string name="predict_path_loss">Predict Path Loss</string>
+    <string name="carrier_frequency">Carrier frequency :</string>
+    <string name="height_of_ntransmitting_antenna">Height of\ntransmitting antenna :</string>
+    <string name="height_of_nreceiving_antenna">Height of\nreceiving antenna :</string>
+    <string name="propagation_distance">Propagation distance :</string>
+    <string name="large_city">Large city</string>
+    <string name="small_medium_city">Small / Medium city</string>
+    <string name="open_area">Open area</string>
+    <string name="suburban_area">Suburban area</string>
+    <string name="urban_area">Urban area</string>
+</resources>

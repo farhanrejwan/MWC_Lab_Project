@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/amber"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/invisible"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:gravity="center_horizontal"
+        android:text="@string/cell_organization_nsimulator"
+        android:textColor="@color/crimson"
+        android:textSize="36sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/choiceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="@string/choose_an_option_from_below"
+        android:textColor="@color/darkSlateGray"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/cellsAndChannelsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/center"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@id/center"
+        android:layout_toLeftOf="@id/center"
+        android:onClick="cellsAndChannelsButton"
+        android:text="@string/cells_and_nchannels" />
+
+    <Button
+        android:id="@+id/predictPathLossButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/center"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/center"
+        android:layout_toRightOf="@id/center"
+        android:onClick="predictPathLossButton"
+        android:text="@string/predict_npath_loss" />
+
+</RelativeLayout>
